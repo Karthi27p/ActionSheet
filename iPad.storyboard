@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="qgq-Yc-ghV">
+            <objects>
+                <viewController id="K9V-kn-6dF" customClass="ViewController" customModule="ActionSheetDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dcP-HG-NfQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="AjY-ZV-meD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KQ9-xn-0ER">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EW-WJ-QOf">
+                                <rect key="frame" x="332.5" y="497" width="103" height="30"/>
+                                <state key="normal" title="Add the details"/>
+                                <connections>
+                                    <action selector="addDetails:" destination="K9V-kn-6dF" eventType="touchUpInside" id="vPQ-co-1G4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGB-KR-USX">
+                                <rect key="frame" x="333" y="419" width="102" height="30"/>
+                                <state key="normal" title="Book the show"/>
+                                <connections>
+                                    <action selector="bookShows:" destination="K9V-kn-6dF" eventType="touchUpInside" id="jw7-wl-DMD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9EW-WJ-QOf" firstAttribute="top" secondItem="lGB-KR-USX" secondAttribute="bottom" constant="48" id="IsH-SM-hqi"/>
+                            <constraint firstItem="lGB-KR-USX" firstAttribute="centerX" secondItem="KQ9-xn-0ER" secondAttribute="centerX" id="a2e-4Y-db5"/>
+                            <constraint firstItem="9EW-WJ-QOf" firstAttribute="centerX" secondItem="KQ9-xn-0ER" secondAttribute="centerX" id="nQr-0a-34B"/>
+                            <constraint firstItem="9EW-WJ-QOf" firstAttribute="centerY" secondItem="KQ9-xn-0ER" secondAttribute="centerY" id="v6X-FQ-Ot7"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="768" height="1024"/>
+                    <connections>
+                        <outlet property="ipadAdd" destination="9EW-WJ-QOf" id="a3m-vd-7eZ"/>
+                        <outlet property="ipadShow" destination="lGB-KR-USX" id="qXn-WT-DvJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hjk-Mp-hk8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69" y="-27"/>
+        </scene>
+    </scenes>
+</document>
